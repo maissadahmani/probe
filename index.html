@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Aufgabe</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="head">
+        <img
+          src="images/cropped-cropped-helles-Logo-db.png"
+          alt="Unternehmens logo"
+        />
+        <h3>Maria Musterfrau</h3>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="container">
+        <div class="pop-up" id="popup">
+          <i class="bx bx-x" onclick="closePopup()"></i>
+          <div class="popup-text">
+            <p>Herzlichen Glückwunsch,</p>
+            <p>du hast die Aufgabe bestanden</p>
+          </div>
+          <button onclick="closePopup()">OK</button>
+        </div>
+        <h1>Meine Aufgaben</h1>
+        <div class="aufgaben-container">
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/first-aid-kit.png" alt="first-aid-kit" />
+              <p class="title">Erste-Hilfe-Maßnahmen</p>
+            </div>
+            <p class="untertitle">
+              Schulung in grundlegenden Erste-Hilfe-Techniken.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/inspection.png" alt="inspection" />
+              <p class="title">Sicherheitsinspektion durchführen</p>
+            </div>
+            <p class="untertitle">
+              Inspektion der Arbeitsumgebung auf potenzielle Gefahrenquellen und
+              Einhaltung von Sicherheitsstandards.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/fire-extinguisher.png" alt="fire-extinguisher" />
+              <p class="title">Notfallübungen</p>
+            </div>
+            <p class="untertitle">
+              Schulung : Teilnahme an Notfallübungen und Kenntnis der
+              Evakuierungspläne
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/foreman.png" alt="man wearing a helmet" />
+              <p class="title">Persönlicher Schutzausrüstungn tragen</p>
+            </div>
+            <p class="untertitle">
+              Sicherstellen, dass angemessene Schutzausrüstung getragen wird, um
+              Verletzungen zu vermeiden.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/warning.png" alt="warning schield" />
+              <p class="title">Gefahre und Vorfälle melden</p>
+            </div>
+            <p class="untertitle">
+              Unmittelbares Melden von unsicheren Bedingungen, Unfällen oder
+              Zwischenfällen an Vorgesetzte oder die Sicherheitsabteilung.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/tools.png" alt="Tools" />
+              <p class="title">Wartung von Werkzeugen und Geräten</p>
+            </div>
+            <p class="untertitle">
+              Sicherstellen, dass die Werkzeuge und Geräte sicher und
+              funktionsfähig sind.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/gloves.png" alt="Sichertshandschuhe" />
+              <p class="title">Umgang mit Chemikalien</p>
+            </div>
+            <p class="untertitle">
+              Beachtung der Sicherheitsvorschriften beim Umgang, Lagern und
+              Entsorgen von Chemikalien, um Verletzungen und Umweltverschmutzung
+              zu vermeiden.
+            </p>
+          </div>
+          <div class="aufgabe" onclick="showPopup()">
+            <div class="symbol-title">
+              <img src="images/biological-hazard.png" alt="Atemschutzgerät" />
+              <p class="title">Atemschutzgerät tragen</p>
+            </div>
+            <p class="untertitle">
+              Verwendung von Atemschutzgeräten und anderen
+              Sicherheitsvorkehrungen beim Umgang mit gefährlichen oder giftigen
+              Substanzen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
